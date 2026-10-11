@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attention Button for Bea</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffe6f2; /* Light pink background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 10;
+        }
+
+        h1 {
+            color: #ff4d94;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(255, 77, 148, 0.2);
+        }
+
+        .attention-btn {
+            background-color: #ff66a3;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 20px 50px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(255, 102, 163, 0.4);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .attention-btn:hover {
+            background-color: #ff3385;
+            box-shadow: 0 15px 25px rgba(255, 51, 133, 0.5);
+            transform: translateY(-5px);
+        }
+
+        .attention-btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 5px 10px rgba(255, 51, 133, 0.4);
+        }
+
+        /* Cute floating hearts animation in background */
+        .heart {
+            position: absolute;
+            color: #ffb3d9;
+            font-size: 20px;
+            animation: floatUp 4s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(100vh) scale(0.5);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.8;
+            }
+            90% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(-10vh) scale(1.5);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating background hearts -->
+    <div class="heart" style="left: 10%; animation-delay: 0s;">❤️</div>
+    <div class="heart" style="left: 30%; animation-delay: 1.5s;">💖</div>
+    <div class="heart" style="left: 50%; animation-delay: 0.5s;">💕</div>
+    <div class="heart" style="left: 70%; animation-delay: 2s;">❤️</div>
+    <div class="heart" style="left: 90%; animation-delay: 1s;">💖</div>
+
+    <div class="container">
+        <h1>For Bea </h1>
+        <!-- mailto link triggers the email draft -->
+        <a href="mailto:yusufbhulaa@gmail.com?subject=BEA%20NEEDS%20ATTENTION!&body=Bea%20needs%20attention%20right%20now!%20Please%20respond%20ASAP!%20%F0%9F%A5%BA%E2%9D%A4%EF%B8%8F" class="attention-btn">
+            Attention Please!
+        </a>
+    </div>
+
+</body>
+</html>
